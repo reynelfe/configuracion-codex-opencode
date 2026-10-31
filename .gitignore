@@ -1,0 +1,10 @@
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+*.bak
+__pycache__/
+.DS_Store
+coverage/
+smoke-report*.json

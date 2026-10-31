@@ -1,0 +1,31 @@
+{
+  "name": "codex-opencode-mcp",
+  "version": "1.0.0",
+  "description": "Control local OpenCode CLI sessions from Codex over MCP stdio",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "codex-opencode-mcp": "src/index.mjs"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node --test test/*.test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "install:codex": "node scripts/install.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reynelfe/configuracion-codex-opencode.git"
+  },
+  "homepage": "https://github.com/reynelfe/configuracion-codex-opencode#readme",
+  "bugs": {
+    "url": "https://github.com/reynelfe/configuracion-codex-opencode/issues"
+  }
+}
